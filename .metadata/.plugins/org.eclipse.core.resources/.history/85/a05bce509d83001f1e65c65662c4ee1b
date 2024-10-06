@@ -1,0 +1,123 @@
+package qw;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
+public class sorting {
+	
+    public static void main(String[] args) {
+		 
+        List<String> name = new ArrayList<String>();
+        
+        // Adding 100 names
+        name.add("Khushvant");
+        name.add("Sonali");
+        name.add("Vivek");
+        name.add("Yogesh");
+        name.add("Payal");
+        name.add("Rame");
+        name.add("Chata");
+        name.add("Vishal");
+        name.add("Rohit");
+        name.add("Priya");
+        name.add("Rakesh");
+        name.add("Sneha");
+        name.add("Akash");
+        name.add("Harsh");
+        name.add("Manisha");
+        name.add("Rajesh");
+        name.add("Gaurav");
+        name.add("Amruta");
+        name.add("Neha");
+        name.add("Abhishek");
+        name.add("Anjali");
+        name.add("Shruti");
+        name.add("Sahil");
+        name.add("Riya");
+        name.add("Ankit");
+        name.add("Pooja");
+        name.add("Kiran");
+        name.add("Deepak");
+        name.add("Swapnil");
+        name.add("Rupesh");
+        name.add("Manoj");
+        name.add("Vikas");
+        name.add("Komal");
+        name.add("Sheetal");
+        name.add("Suresh");
+        name.add("Ritu");
+        name.add("Megha");
+        name.add("Ajay");
+        name.add("Kishore");
+        name.add("Bhavesh");
+        name.add("Pratik");
+        name.add("Vandana");
+        name.add("Sumit");
+        name.add("Shubham");
+        name.add("Tanvi");
+        name.add("Divya");
+        name.add("Yash");
+        name.add("Jyoti");
+        name.add("Sandeep");
+        name.add("Mahesh");
+        name.add("Isha");
+        name.add("Vivekanand");
+        name.add("Shravan");
+        name.add("Kavita");
+        name.add("Rohan");
+        name.add("Aditi");
+        name.add("Sakshi");
+        name.add("Jitesh");
+        name.add("Pranjal");
+        name.add("Sarita");
+        name.add("Hemant");
+        name.add("Madhuri");
+        name.add("Ashwin");
+        name.add("Prachi");
+        name.add("Dinesh");
+        name.add("Nikita");
+        name.add("Suraj");
+        name.add("Ravindra");
+        name.add("Swati");
+        name.add("Aditya");
+        name.add("Pranav");
+        name.add("Tejas");
+        name.add("Kajal");
+        name.add("Nilesh");
+        name.add("Mayuri");
+        name.add("Ankita");
+        name.add("Aishwarya");
+        name.add("Vaibhav");
+        name.add("Ketan");
+        name.add("Dipti");
+        name.add("Sachin");
+        name.add("Ashwini");
+        name.add("Shashank");
+        name.add("Piyush");
+        name.add("Rahul");
+        name.add("Bharti");
+        name.add("Sonal");
+        name.add("Lakshmi");
+        name.add("Monika");
+        name.add("Gopal");
+        name.add("Shivani");
+        name.add("Vaishali");
+        name.add("Varun");
+        name.add("Krishna");
+        name.add("Suhas");
+        name.add("Poonam");
+        name.add("Sudhir");
+        name.add("Preeti");
+
+// List<String>  sortList=name.stream().filter(n->n.startsWith("K")).collect(Collectors.toList());
+// 
+// for (String string : sortList) {
+//	System.out.println(string);
+
+        List<String>sortList=name.stream().filter(n->n.endsWith("M")).toList();
+        
+        sortList.forEach(System.out::println);
+    }
+}
